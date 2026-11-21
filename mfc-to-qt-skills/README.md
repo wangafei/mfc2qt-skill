@@ -1,6 +1,6 @@
 # MFC → Qt 迁移技能系列
 
-面向 MFC（Microsoft Foundation Classes）桌面程序迁移到 **Qt Widgets** 的一组 WorkBuddy Skill。参考 `coczhang/qt-general-dev-skill` 与 `TheQtCompanyRnD/agent-skills` 的组织方式制作。
+面向 MFC（Microsoft Foundation Classes）桌面程序迁移到 **Qt Widgets** 的一组 AI 助手技能。参考 `coczhang/qt-general-dev-skill` 与 `TheQtCompanyRnD/agent-skills` 的组织方式制作。
 
 统一技术路线：**Qt Widgets + `.ui` 表单 + QSS + 现代 CMake**。不生成 QML 方案。
 
@@ -76,17 +76,17 @@ mfc-to-qt-skills/
 
 ## 安装
 
-已安装到用户级目录 `~/.workbuddy/skills/`，所有项目可用。若需重装：
+把 `mfc-*` 目录复制到所用 AI 助手的用户级技能目录，即可在所有项目中使用。若需重装：
 
 ```bash
-cp -R mfc-to-qt-skills/mfc-* ~/.workbuddy/skills/
+cp -R mfc-to-qt-skills/mfc-* <你的技能目录>/
 ```
 
-若只需在特定项目使用，复制到项目根目录的 `.workbuddy/skills/`。
+若只需在特定项目使用，复制到该项目自己的技能目录即可。
 
 ## 推荐用法
 
-直接描述迁移场景，WorkBuddy 会按 description 自动触发对应技能；也可以显式指定：
+直接描述迁移场景，助手会按 description 自动触发对应技能；也可以显式指定：
 
 ```text
 用 mfc-to-qt-migration 盘点这个 MFC 项目，目标 Qt 5.15，给出迁移批次建议。

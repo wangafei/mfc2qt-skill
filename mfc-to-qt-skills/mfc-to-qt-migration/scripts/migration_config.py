@@ -7,7 +7,7 @@ Manages two things that must survive across sessions and across skills:
   * User-defined MFC control -> Qt widget mappings (with disk persistence).
 
 Project config : <project-root>/.mfc-qt/config.json
-Global config  : ~/.workbuddy/mfc-to-qt-skills/config.json   (--scope global)
+Global config  : ~/.mfc-to-qt-skills/config.json   (--scope global)
 
 Project values override global values field by field. Built-in defaults are
 used only when neither config defines a mapping.
@@ -38,7 +38,7 @@ from pathlib import Path
 
 SCHEMA_VERSION = 1
 PROJECT_RELATIVE = Path(".mfc-qt") / "config.json"
-GLOBAL_RELATIVE = Path(".workbuddy") / "mfc-to-qt-skills" / "config.json"
+GLOBAL_RELATIVE = Path(".mfc-to-qt-skills") / "config.json"
 
 
 # Built-in fallback table. Keys are normalized (lowercase, alnum only).

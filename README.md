@@ -1,6 +1,6 @@
 # mfc2qt-skill
 
-一组面向 **MFC → Qt Widgets** 迁移的 [WorkBuddy](https://www.workbuddy.cn/) Skill，把 MFC 的 `.rc` 资源、消息映射、DDX 绑定、`OnSize` 手工布局、几何 API、模态窗体、键鼠消息等场景，系统性转换为 **Qt Widgets + `.ui` + 信号槽 + 现代 CMake** 的实现。
+一组面向 **MFC → Qt Widgets** 迁移的 AI 编码助手 Skill，把 MFC 的 `.rc` 资源、消息映射、DDX 绑定、`OnSize` 手工布局、几何 API、模态窗体、键鼠消息等场景，系统性转换为 **Qt Widgets + `.ui` + 信号槽 + 现代 CMake** 的实现。
 
 参考 `coczhang/qt-general-dev-skill` 与 `TheQtCompanyRnD/agent-skills` 的组织方式制作。
 
@@ -31,10 +31,10 @@
 
 ## 快速开始
 
-把 `mfc-to-qt-skills/` 下的 `mfc-*` 目录复制到 `~/.workbuddy/skills/`（全局可用），或复制到项目的 `.workbuddy/skills/`（仅该项目可用）：
+把 `mfc-to-qt-skills/` 下的 `mfc-*` 目录复制到所用 AI 助手的用户级技能目录（全局可用），或复制到项目的技能目录（仅该项目可用）。例如：
 
 ```bash
-cp -R mfc-to-qt-skills/mfc-* ~/.workbuddy/skills/
+cp -R mfc-to-qt-skills/mfc-* <你的技能目录>/
 ```
 
 然后直接描述场景，例如：

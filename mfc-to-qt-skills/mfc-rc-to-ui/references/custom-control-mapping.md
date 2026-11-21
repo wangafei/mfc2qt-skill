@@ -7,7 +7,7 @@
 统一使用 `<项目根>/.mfc-qt/config.json` 的 `controlMap` 字段。该文件由总入口技能提供的脚本维护：
 
 ```bash
-S=~/.workbuddy/skills/mfc-to-qt-migration/scripts/migration_config.py
+S=<技能目录>/mfc-to-qt-migration/scripts/migration_config.py
 
 python "$S" map list --root <项目根>                     # 查看生效表（内置 + 用户）
 python "$S" map add MyGridCtrl QTableView --root <项目根>
@@ -17,7 +17,7 @@ python "$S" map export --root <项目根> --format json > mappings.json
 python "$S" map import mappings.json --root <项目根>
 ```
 
-- 不传 `--root` 时默认当前目录；`--scope global` 写入 `~/.workbuddy/mfc-to-qt-skills/config.json` 作为个人长期偏好。
+- 不传 `--root` 时默认当前目录；`--scope global` 写入 `~/.mfc-to-qt-skills/config.json` 作为个人长期偏好。
 - 项目级配置优先于全局配置；两者都覆盖内置默认表。
 - token 归一化：去掉 `IDC_` 前缀、忽略大小写与非字母数字字符，因此 `IDC_MY_GRID` 与 `MyGrid` 不会自动等价——按实际出现的标记逐个登记。
 - 映射条目可包含 `widget`（必需）、`header`、`note`、`source`。`source=user` 表示用户自定义。

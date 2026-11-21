@@ -7,7 +7,7 @@
 | 层级 | 路径 | 用途 |
 |---|---|---|
 | 内置默认 | 技能内 `BUILTIN_MAP` | 仅在用户未配置时兜底 |
-| 全局配置 | `~/.workbuddy/mfc-to-qt-skills/config.json` | 个人长期偏好，跨项目复用 |
+| 全局配置 | `~/.mfc-to-qt-skills/config.json` | 个人长期偏好，跨项目复用 |
 | 项目配置 | `<项目根>/.mfc-qt/config.json` | 项目级决定，**优先于全局配置** |
 
 字段按层级合并（不是整个文件替换）：项目配置只写需要覆盖的字段即可。
@@ -21,7 +21,7 @@
 3. **仍无法判定** → 必须向用户询问，不得自行假定 Qt 6。
 
 ```bash
-S=~/.workbuddy/skills/mfc-to-qt-migration/scripts/migration_config.py
+S=<技能目录>/mfc-to-qt-migration/scripts/migration_config.py
 
 python "$S" init      --root <项目根>
 python "$S" detect    --root <项目根>            # 只读探测，给出证据
