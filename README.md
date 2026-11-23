@@ -1,5 +1,7 @@
 # mfc2qt-skill
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 A set of AI coding-assistant Skills for **MFC → Qt Widgets** migration. They systematically convert MFC scenarios — `.rc` resources, message maps, DDX bindings, manual `OnSize` layout, geometry APIs, modal dialogs, keyboard/mouse messages, and more — into **Qt Widgets + `.ui` + signals & slots + modern CMake** implementations.
 
 Modeled after the organization of `coczhang/qt-general-dev-skill` and `TheQtCompanyRnD/agent-skills`.

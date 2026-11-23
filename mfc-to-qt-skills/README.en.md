@@ -1,5 +1,7 @@
 # MFC → Qt Migration Skills
 
+[English](README.en.md) | [中文](README.md)
+
 A set of AI assistant skills for migrating MFC (Microsoft Foundation Classes) desktop applications to **Qt Widgets**. Modeled after the organization of `coczhang/qt-general-dev-skill` and `TheQtCompanyRnD/agent-skills`.
 
 Unified technical approach: **Qt Widgets + `.ui` forms + QSS + modern CMake**. No QML-based solutions are generated.

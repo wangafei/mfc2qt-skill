@@ -1,5 +1,7 @@
 # MFC → Qt 迁移技能系列
 
+[English](README.en.md) | [中文](README.md)
+
 面向 MFC（Microsoft Foundation Classes）桌面程序迁移到 **Qt Widgets** 的一组 AI 助手技能。参考 `coczhang/qt-general-dev-skill` 与 `TheQtCompanyRnD/agent-skills` 的组织方式制作。
 
 统一技术路线：**Qt Widgets + `.ui` 表单 + QSS + 现代 CMake**。不生成 QML 方案。
